@@ -4,4 +4,4 @@ text = """
 """
 
 # TODO
-
+print(list(map(len, text.split())))
