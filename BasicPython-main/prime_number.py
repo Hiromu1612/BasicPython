@@ -1,24 +1,17 @@
-a = input("aの値を入力: ")
-b = input("bの値を入力: ")
+# a = input("aの値を入力: ")
+# b = input("bの値を入力: ")
 
 # TODO
-a = int(a)
-b = int(b)
+import math
 
-if a == 2:
-    print("素数です")
-elif a % 2 == 0:
-    print("素数ではありません")
-elif a == 1:
+n = int(input("nの値を入力: "))
+
+if n <= 1:
     print("素数ではありません")
 else:
-    print("素数です")
-
-if a == 2:
-    print("素数です")
-elif b % 2 == 0:
-    print("素数ではありません")
-elif b == 1:
-    print("素数ではありません")
-else:
-    print("素数です")
+    for i in range(2, math.isqrt(n) + 1): #2からその数の平方根までの全ての数で割り切れるかどうかを調べる
+        if n % i == 0:
+            print("素数ではありません")
+            break
+    else:
+        print("素数です")
