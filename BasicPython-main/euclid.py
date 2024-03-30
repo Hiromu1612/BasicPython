@@ -45,4 +45,5 @@ for _ in range(100000):
 
 probability = count / 100000
 
+
 print(f"互いに素である確率は {probability}")
