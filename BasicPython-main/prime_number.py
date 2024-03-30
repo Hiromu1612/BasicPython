@@ -22,4 +22,5 @@ result = prime_number(n)
 if result is None:
     result = True
 
+
 print(result)
