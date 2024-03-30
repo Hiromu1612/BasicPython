@@ -31,6 +31,7 @@ def coprime(a, b):
 print(coprime(a, b))
 
 
+
 #エクストラ問題
 import random
 

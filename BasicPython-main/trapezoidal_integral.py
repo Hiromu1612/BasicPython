@@ -22,6 +22,7 @@ def question2(x):
 def question3(x):
     return (pi**(1/2)*math.exp(-x**2))
 
+
 print(trapezoidal(question1, 0, math.pi/2, 50))
 print(trapezoidal(question2, 0, 1, 100))
 print(trapezoidal(question3, -100, 100, 1000))
