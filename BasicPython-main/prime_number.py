@@ -10,7 +10,7 @@ except:
 
 def prime_number(n):
     if n < 2:
-        return "判定不可"
+        return "素数ではありません"
     else:
         for i in range(2, n):
             if n % i == 0:
@@ -18,4 +18,8 @@ def prime_number(n):
             elif i == n-1:
                 return True
 
-print(prime_number(n))
+result = prime_number(n)
+if result is None:
+    result = True
+
+print(result)
