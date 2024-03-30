@@ -2,20 +2,19 @@
 # b = input("bの値を入力: ")
 
 # TODO
-n = input("nの値を入力: ")
-try:
-    n = int(n)
-except:
-    print("nは整数で入力してください")
+a = int(a)
+b = int(b)
 
-def prime_number(n):
-    if n < 2:
-        return "判定不可"
-    else:
-        for i in range(2, n):
-            if n % i == 0:
-                return False
-            elif i == n-1:
-                return True
+if a % 2 == 0:
+    print("素数ではありません")
+elif a == 1:
+    print("素数ではありません")
+else:
+    print("素数です")
 
-print(prime_number(n))
+if b % 2 == 0:
+    print("素数ではありません")
+elif b == 1:
+    print("素数ではありません")
+else:
+    print("素数です")
