@@ -12,8 +12,6 @@ except:
 def euclid(a, b):
     if a < b:
         a, b = b, a
-    else:
-        a,b = a, b
 
     while b != 0: 
         a, b = b, a % b
@@ -25,7 +23,7 @@ print(f"最大公約数は{a}")
 
 #問.4 互いに素であるか判定
 def coprime(a, b):
-    if euclid(a, b)[0] == 1:
+    if euclid(a, b) == 1: 
         return True
     else:
         return False

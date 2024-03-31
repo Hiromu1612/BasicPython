@@ -13,13 +13,7 @@ def prime_number(n):
         return False
     else:
         for i in range(2, n):
-            if i == n-1:
-                return True
-            elif n % i == 0:
+            if n % i == 0:
                 return False
-
-result = prime_number(n)
-if result is None: #これがないと2がNoneになる
-    result = True
-
-print(result)
+        return True
+print(prime_number(n))
