@@ -7,6 +7,7 @@ try:
     b = int(b)
 except:
     print("aとbは整数で入力してください")
+    exit()
     
 def euclid(a, b):
     if a < b:

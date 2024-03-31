@@ -9,8 +9,8 @@ from math import pi
 def trapezoidal(f, a=0, b=1, n=100):
     h = (b-a)/n
     S = 0
-    for i in range(1, n+1):
-        S += (h/2)*(f(a+(i-1)*h) + f(a+i*h))
+    for i in range(n):
+        S += (h/2)*(f(a+i*h) + f(a+(i+1)*h))
     return S
 
 def question1(x):
