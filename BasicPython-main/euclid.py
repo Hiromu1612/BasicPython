@@ -7,6 +7,7 @@ try:
     b = int(b)
 except:
     print("aとbは整数で入力してください")
+    exit()
     
 def euclid(a, b):
     if a < b:
@@ -44,5 +45,6 @@ for _ in range(100000):
         count += 1
 
 probability = count / 100000
+
 
 print(f"互いに素である確率は {probability}")
