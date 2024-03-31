@@ -2,24 +2,25 @@
 # b = input("bの値を入力: ")
 
 # TODO
-<<<<<<< HEAD
-a = int(a)
-b = int(b)
+<<<<<<<<< Temporary merge branch 1
+n = input("nの値を入力: ")
+try:
+    n = int(n)
+except:
+    print("nは整数で入力してください")
 
-if a % 2 == 0:
-    print("素数ではありません")
-elif a == 1:
-    print("素数ではありません")
-else:
-    print("素数です")
+def prime_number(n):
+    if n < 2:
+        return "判定不可"
+    else:
+        for i in range(2, n):
+            if n % i == 0:
+                return False
+            elif i == n-1:
+                return True
 
-if b % 2 == 0:
-    print("素数ではありません")
-elif b == 1:
-    print("素数ではありません")
-else:
-    print("素数です")
-=======
+print(prime_number(n))
+=========
 import math
 
 n = int(input("nの値を入力: "))
@@ -33,4 +34,4 @@ else:
             break
     else:
         print("素数です")
->>>>>>> 61eac50c7235b2cf8421d34a41983b7e83c3b2ef
+>>>>>>>>> Temporary merge branch 2
