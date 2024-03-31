@@ -10,7 +10,7 @@ except:
 
 def prime_number(n):
     if n < 2:
-        return "素数ではありません"
+        return False
     else:
         for i in range(2, n):
             if i == n-1:
