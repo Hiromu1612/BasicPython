@@ -13,7 +13,6 @@ def trapezoidal(f, a=0, b=1, n=100):
         S += (h/2)*(f(a+i*h) + f(a+(i+1)*h))
     return S
 
-
 def question1(x):
     return math.sin(x)
 
