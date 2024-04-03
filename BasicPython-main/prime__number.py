@@ -8,6 +8,7 @@ except:
     print("nは整数で入力してください")
     exit()
 
+
 def prime_number(n):
     if n < 2:
         return False

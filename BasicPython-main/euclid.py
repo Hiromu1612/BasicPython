@@ -15,10 +15,10 @@ def euclid(a, b):
 
     while b != 0: 
         a, b = b, a % b
-    return a, b
+    return a
 
-a, _ = euclid(a, b)
-print(f"最大公約数は{a}")
+answer = euclid(a, b)
+print(f"最大公約数は{answer}")
 
 
 #問.4 互いに素であるか判定
